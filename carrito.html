@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <script src="https://kit.fontawesome.com/a03e984235.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos-general.css">
+    <link rel="stylesheet" href="css/estilos-header.css">
+    <link rel="stylesheet" href="css/estilos-carrito.css">
+    <link rel="stylesheet" href="css/estilos-footer.css">
+</head>
+<body>
+    
+        <header class="header">    
+            <div class="header_superior"> 
+                <div class="logo">
+                    <h1>Sweet Candy</h1>
+                </div>
+                <div class="search">
+                        <input type="search" name="search" placeholder="Buscar...">
+                        <a href="registro.html" class="login"> <i class="fa-solid fa-user"></i> <span id="usernameDisplay">Login</span>
+                        </a>
+                </div>
+            </div>
+             <div class="contenedor_menu">
+                <div class="menu">
+                    <input type="checkbox" id="check_menu">
+                    <label id="label_check" for="check_menu">
+                    <i class="fa-solid fa-bars icon_menu " style="color: #631f83;"></i>
+                    </label>
+                    <nav>
+                         <ul>
+                             <li><a href="index.html" id="seleccion"><i class="fa-solid fa-house" style="color: #631f83;""></i></a></li>
+                             <li ><a href="ofertas.html">OFERTAS</a></li>
+                             <li ><a href="nosotros.html">NOSOTROS</a></li>
+                             <li><a href="productos.html">PRODUCTOS</a></li> 
+                             <li><a href="contacto.html">CONTACTO    </a> </li>
+                             <li> <a href="carrito.html" >MI CARRITO </a> </li>
+                         </ul>
+                    </nav>
+                </div>
+            </div> 
+        </header>
+    
+        <div class="container">
+
+        <h1>Carrito de Compras</h1>
+        
+        <!-- Datos del cliente -->
+        <section class="customer-info">
+            <h2>Datos del Cliente</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" disabled value="Juan Perez">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" disabled value="juan.perez@gmail.com">
+                <label for="address">Dirección de Entrega:</label>
+                <input type="text" id="address" name="address" disabled  value="Lavalle 1389 Capital Federal">
+           </form>
+        </section>
+        
+        <!-- Forma de pago -->
+        <section class="payment-method">
+            <h2>Forma de Pago</h2>
+            <select>
+                <option value="credit-card">Tarjeta de Crédito</option>
+                <option value="paypal">Efectivo</option>
+                <option value="bank-transfer">Transferencia Bancaria</option>
+            </select>
+        </section>
+        
+        <!-- Forma de entrega -->
+        <section class="delivery-method">
+            <h2>Forma de Entrega</h2>
+            <input type="radio" id="standard" name="delivery" value="local" checked>
+            <label for="standard">Retira en Local</label>
+            <input type="radio" id="express" name="delivery" value="Delivery">
+            <label for="express">Delivery</label>
+        </section>
+
+
+        <div class="flex-container">
+            <div class="product">
+                <h3 class="title">Producto 1</h3>
+                <p class="description">Descripción del Producto 1</p>
+            </div>
+            <div class="product">
+                <h3 class="title">Producto 2</h3>
+                <p class="description">Descripción del Producto 2</p>
+            </div>
+            <div class="product">
+                <h3 class="title">Producto 3</h3>
+                <p class="description">Descripción del Producto 3</p>
+            </div>
+            <!-- Agregar más productos según sea necesario -->
+        </div>
+        
+        
+        
+        <!-- Listado de productos -->
+        <section class="product-list">
+            <h2>Detalle de la compra</h2>
+            <table>
+                <thead >
+                    <tr >
+                        <th></th>
+                        <th>ARTICULO</th>
+                        <th>PRECIO</th>
+                        <th>CANTIDAD</th>
+                        <th>SUBTOTAL</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="recursos/caramelo.jfif" alt="Producto 1"></td>
+                        <td class="texto-list">Producto 1 Detalle</td>
+                        <td class="texto-list">$10.00</td>
+                        <td><input type="number" value="2" min="1">   <button class="update-button"><i class="fa-regular fa-pen-to-square">Actualizar</i></button></td>
+                        <td class="texto-list">$20.00</td>
+                        <td> <button class="delete-button">
+                            <i class="fa-solid fa-trash-can"> Borrar</i>
+                          </button> </td>
+                    </tr>
+                    <!-- Agrega más filas según sea necesario -->
+                </tbody>
+            </table>
+        </section>
+        
+   <!-- Total general -->
+    <section class="total">
+      
+            <h2>Total </h2>
+            <p>$10000.00 </p>
+           
+           <button class="buy-button"><i class="fa-solid fa-circle-check"></i>Comprar </button>
+        
+    </section>
+    
+ </div>
+  
+<footer class="footer"> 
+        <div class="contenedor_footer" >
+            <div class="seccion_footer nosotros_footer"> 
+                <img src="logos/logo_blanco.svg" alt="logo_footer" width="180px;" > 
+                <p>En SweetCandy, hacemos que satisfacer tus antojos de dulces sea más fácil que nunca. Desde clásicos caramelos hasta las últimas tendencias en confitería, nuestra tienda ofrece una amplia variedad de deliciosas opciones para todos los gustos y ocasiones.
+                    Explora nuestro catálogo virtual y descubre una irresistible selección de golosinas cuidadosamente seleccionadas. ¿Buscas regalos para cumpleaños, celebraciones o simplemente para consentirte? Tenemos opciones para cada ocasión.
+                </p>
+                <ul class="redes_footer">
+                    <li><a href="#"> <i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>    
+            </div>
+            <div class="seccion_footer reglamentos_footer">
+                <h3> Reglamentos 
+                </h3>
+                    <ul>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                        <li><a href="#">Defensa del consumidor</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+            </div>
+            <div class="seccion_footer menu_footer">
+                <h3> 
+                    Menu
+                </h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>  
+            <div class="seccion_footer contacto_footer">
+                <h3>Contacto</h3>
+                <ul class="info_footer">
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <P> 1204 Avenida Pueyrredon <br>
+                        Capital Federal CP 1205 </P>      
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <p>Aten. al cliente: (+54) 011 1111-2222<br>
+                        Reclamos: (+54) 011 1111-3333 </p> 
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p>sweetcandy@gmail.com</p>   
+                     </li>
+                </ul>
+            </div>      
+        </div> 
+        <div class="copyright">
+        <p >©2023 - Todos los Derechos Reservados / Sweet Candy</p>
+        </div>
+    </footer>
+
+
+
+    
+
+</body>
+</html>
