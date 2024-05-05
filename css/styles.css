@@ -9,137 +9,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #FFF5ED;
-}
-.logo{
-  /*color:  rgb(147, 141, 141);  */
-    font-family: "Pacifico", cursive;
-    font-size: 30px;
-    font-weight: 600;
-    font-style: normal;
-  background: linear-gradient(to left, rgb(238, 130, 189), rgb(155, 49, 230), rgb(78, 168, 241), rgb(22, 173, 107), rgb(255, 255, 0), rgb(255, 0, 38), rgb(255, 0, 119));
-  background-clip: text;
-  display: inline;
-  color: transparent;
-    
-    
-  }
-  
-  
 
-
-
-.logo img {
-  width: 100px;
-}
-
-nav {
-  
-  display: none; 
-}
-.nav-toggle {
-  display: none;
-}
-
-.nav-toggle-label {
-  cursor: pointer;
-}
-
-.nav-toggle-label .img-menu {
-  width: 60px; 
-  height: auto;
-  
-}
-
-  
-
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  
-}
-
-nav ul li {
-  margin-bottom: 10px;
-  
-  
-}
-
-nav ul li:last-child {
-  margin-bottom: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: rgb(128, 123, 123);
-}
-
-.nav-toggle:checked + nav {
-  display: block; 
-}
-.search-bar {
-  position: relative;
-  /*display: inline-block;*/
-  
-}
-.input-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.input-text {
-  padding-left: 100px; /* Espacio para el icono */
-}
-
-.glass {
-  width: 25px;
-  position: absolute;
-  right: 10px; /* Ajusta la posición horizontal del icono dentro del input */
-  top: 50%;
-  transform: translateY(-50%);
-}
-.search-bar input[type="text"] {
-  padding-right: 50px;
-  border-radius: 30px;
-  padding: 15px;
-  width: 400px;
-  background-color:#adb2fb; /*#caffef; #afeff9; #ffdada;*/  
-  border: none;
-  
-}
-
-.search-bar .search-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px; 
-  height: 120%;
-  background: url('../public/search.png') no-repeat center center;
-  background-size: contain; 
-  margin-right: 10px; 
-  border: none;
-  cursor: pointer;  
-  filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(0deg);
-}
-
-
-
-.user-options a {
-  text-decoration: none;
-  color: rgb(90, 86, 86);
-  margin-right: 10px;
-}
-
-.user-options a:last-child {
-  margin-right: 0;
-}
 
 
 .banner {
@@ -211,57 +81,6 @@ nav a {
 .producto button:hover {
   background-color: #ffff66; 
 }
-footer {
-  display: flex;
-  justify-content: space-around;
-  background-color: #adb2fb;
-}
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  color: rgb(88, 86, 86);
-  font-family: "Pacifico", cursive;
-  font-size: 20px;
-}
-
-.contact-item {
-  color: rgb(88, 86, 86);
-  font-family: "Pacifico", cursive;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  
-}
-.icon-contact{
-  width: 25px;
-}
-
-/*.contact-info {
-  display: flex;
-  flex-direction: column;
-  color:  rgb(88, 86, 86);  
-    font-family: "Pacifico", cursive;
-    font-size: 20px;
-}*/
-.social-media {
-
- display: flex;
- flex-direction: column;
- margin-top: 40px;
- color:  rgb(88, 86, 86);  
-    font-family: "Pacifico", cursive;
-    font-size: 20px;
-}
-
-.social-media-icons {
- 
-  display:grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  margin-top: 40px; 
-
-}
-
 
 
 
@@ -276,6 +95,15 @@ footer {
     max-width: 100%; 
 }
 
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  .carrito thead {
+      display: none; /* Oculta el encabezado en pantallas pequeñas */
+  }
+}
+
+/* fin estilo  para carrito */
 
 
 @media (max-width: 1024px) {

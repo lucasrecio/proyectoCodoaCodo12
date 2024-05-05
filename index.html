@@ -4,52 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Golosinas</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css"> 
+    <script src="https://kit.fontawesome.com/a03e984235.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos-general.css">
+    <link rel="stylesheet" href="css/estilos-header.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="css/estilos-carrito.css">
+    <link rel="stylesheet" href="css/estilos-footer.css">
+
 </head>
 <body>
-    <header>
-        
+    <header class="header">    
+        <div class="header_superior"> 
             <div class="logo">
-                <!-- <img src="logo.png" alt="Sweet candy">--> 
                 <h1>Sweet Candy</h1>
             </div>
-            <input type="checkbox" id="nav-toggle" class="nav-toggle">
-            <nav>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-            <label for="nav-toggle" class="nav-toggle-label">
-                <img src="./recursos/bars-solid (1).svg" class="img-menu" alt="Menú desplegable">
-            </label>
-            <div class="search-bar">
-                <div class="input-wrapper">
-                    <input type="text" class="input-text" placeholder="Buscá tu producto...">
-                    <img src="./recursos/magnifying-glass-solid.svg" alt="" class="glass">
-                </div>
-                <button type="submit" class="search-button"></button>
+            <div class="search">
+                    <input type="search" name="search" placeholder="Buscar...">
+                    <a href="registro.html" class="login"> <i class="fa-solid fa-user"></i> <span id="usernameDisplay">Login</span>
+                    </a>
             </div>
-            
-            <!-- <div class="search-bar"> 
-                <i class="fa-solid fa-magnifying-glass" style="color: #FFD43B;"></i>
-                <input type="text"class="input-text" placeholder="Buscá tu producto..." >
-                <button type="submit" class="search-button"></button>
-            </div>-->
-            
-        
-       
-        <div class="user-options">
-            <a href="#">Registrarse</a>
-            <a href="#">Iniciar Sesión</a>
         </div>
+         <div class="contenedor_menu">
+            <div class="menu">
+                <input type="checkbox" id="check_menu">
+                <label id="label_check" for="check_menu">
+                <i class="fa-solid fa-bars icon_menu " style="color: #631f83;"></i>
+                </label>
+                <nav>
+                     <ul>
+                         <li><a href="index.html" id="seleccion"><i class="fa-solid fa-house" style="color: #631f83;""></i></a></li>
+                         <li ><a href="ofertas.html">OFERTAS</a></li>
+                         <li ><a href="nosotros.html">NOSOTROS</a></li>
+                         <li><a href="productos.html">PRODUCTOS</a></li> 
+                         <li><a href="contacto.html">CONTACTO    </a> </li>
+                         <li> <a href="carrito.html" >MI CARRITO </a> </li>
+                     </ul>
+                </nav>
+            </div>
+        </div> 
     </header>
 
     <section class="banner">
@@ -119,42 +111,69 @@
        
     </section>
 
-    <footer>
-        <div class="contact-info">
-            <div class="contact-item">
-                <p>Dirección: Avenida Siempre Viva, Springfield</p>
+    <footer class="footer"> 
+        <div class="contenedor_footer" >
+            <div class="seccion_footer nosotros_footer"> 
+                <img src="logos/logo_blanco.svg" alt="logo_footer" width="180px;" > 
+                <p>En SweetCandy, hacemos que satisfacer tus antojos de dulces sea más fácil que nunca. Desde clásicos caramelos hasta las últimas tendencias en confitería, nuestra tienda ofrece una amplia variedad de deliciosas opciones para todos los gustos y ocasiones.
+                    Explora nuestro catálogo virtual y descubre una irresistible selección de golosinas cuidadosamente seleccionadas. ¿Buscas regalos para cumpleaños, celebraciones o simplemente para consentirte? Tenemos opciones para cada ocasión.
+                </p>
+                <ul class="redes_footer">
+                    <li><a href="#"> <i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>    
             </div>
-            <div class="contact-item">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10564.816851871525!2d-103.34011800061518!3d20.57879280593822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b2ca3d0ab4df%3A0xf736fea037b0a9b9!2sAv%20Siempre%20Viva%2C%20Vista%20Hermosa%2C%2045618%20San%20Pedro%20Tlaquepaque%2C%20Jal.%2C%20M%C3%A9xico!5e0!3m2!1ses!2sar!4v1713362570996!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="seccion_footer reglamentos_footer">
+                <h3> Reglamentos 
+                </h3>
+                    <ul>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                        <li><a href="#">Defensa del consumidor</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
             </div>
-            <div class="contact-item">
-                <img src="./recursos/phone-solid.svg" alt="phone" class="icon-contact">
-                <p>Teléfono: 123-456-7890</p>
-                
-            </div>
-            <div class="contact-item">
-                <img src="./recursos/envelope-solid.svg" alt="email"class="icon-contact">
-                <p>Email: info@Swwetcandy.com</p>
-                
-            </div>
+            <div class="seccion_footer menu_footer">
+                <h3> 
+                    Menu
+                </h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>  
+            <div class="seccion_footer contacto_footer">
+                <h3>Contacto</h3>
+                <ul class="info_footer">
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <P> 1204 Avenida Pueyrredon <br>
+                        Capital Federal CP 1205 </P>      
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <p>Aten. al cliente: (+54) 011 1111-2222<br>
+                        Reclamos: (+54) 011 1111-3333 </p> 
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p>sweetcandy@gmail.com</p>   
+                     </li>
+                </ul>
+            </div>      
+        </div> 
+        <div class="copyright">
+        <p >©2023 - Todos los Derechos Reservados / Sweet Candy</p>
         </div>
-        
-        <!-- <div class="contact-info"> 
-            <p>Dirección: Avenida Siempre Viva, Springfield</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10564.816851871525!2d-103.34011800061518!3d20.57879280593822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b2ca3d0ab4df%3A0xf736fea037b0a9b9!2sAv%20Siempre%20Viva%2C%20Vista%20Hermosa%2C%2045618%20San%20Pedro%20Tlaquepaque%2C%20Jal.%2C%20M%C3%A9xico!5e0!3m2!1ses!2sar!4v1713362570996!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Teléfono: 123-456-7890</p>
-            <img src="./recursos/phone-solid.svg" alt="phone">
-            <img src="./recursos/envelope-solid.svg" alt="email">
-            <p>Email: info@Swwetcandy.com</p>
-        </div>-->
-        <div class="social-media">
-            <h1 class="social-media-title">Seguinos</h1>
-            <div class="social-media-icons">
-                <a href="#"><img src="./recursos/square-instagram.svg" alt="Instagram"></a>
-                <a href="#"><img src="./recursos/facebook.svg" alt="Facebook"></a>
-            </div>
-        </div>
-        
     </footer>
+
+
+       
+       
 </body>
 </html>
