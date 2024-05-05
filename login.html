@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Sweet Candy</title>
+    <link rel="stylesheet" href="css/estilos-general.css">
+    <link rel="stylesheet" href="css/estilos-header.css">
+    <link rel="stylesheet" href="css/estilos-footer.css">
+    <link rel="stylesheet" href="css/estilos-login.css">
+    
+</head>
+<body>
+    <header class="header">    
+        <div class="header_superior"> 
+            <div class="logo">
+                <h1>Sweet Candy</h1>
+            </div>
+            <div class="search">
+                    <input type="search" name="search" placeholder="Buscar...">
+                    <a href="registro.html" class="login"> <i class="fa-solid fa-user"></i> <span id="usernameDisplay">Login</span>
+                    </a>
+            </div>
+        </div>
+         <div class="contenedor_menu">
+            <div class="menu">
+                <input type="checkbox" id="check_menu">
+                <label id="label_check" for="check_menu">
+                <i class="fa-solid fa-bars icon_menu " style="color: #631f83;"></i>
+                </label>
+                <nav>
+                     <ul>
+                         <li><a href="index.html" id="seleccion"><i class="fa-solid fa-house" style="color: #631f83;""></i></a></li>
+                         <li ><a href="ofertas.html">OFERTAS</a></li>
+                         <li ><a href="nosotros.html">NOSOTROS</a></li>
+                         <li><a href="productos.html">PRODUCTOS</a></li> 
+                         <li><a href="contacto.html">CONTACTO    </a> </li>
+                         <li> <a href="carrito.html" >MI CARRITO </a> </li>
+                     </ul>
+                </nav>
+            </div>
+        </div> 
+    </header>
+    
+
+    <section class="login-section">
+        <div class="login-container">
+            <h2>Iniciar Sesión</h2>
+            <form action="procesar_login.php" method="POST">
+                <div class="form-group">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
+        </div>
+    </section>
+
+    <footer class="footer"> 
+        <div class="contenedor_footer" >
+            <div class="seccion_footer nosotros_footer"> 
+                <img src="logos/logo_blanco.svg" alt="logo_footer" width="180px;" > 
+                <p>En SweetCandy, hacemos que satisfacer tus antojos de dulces sea más fácil que nunca. Desde clásicos caramelos hasta las últimas tendencias en confitería, nuestra tienda ofrece una amplia variedad de deliciosas opciones para todos los gustos y ocasiones.
+                    Explora nuestro catálogo virtual y descubre una irresistible selección de golosinas cuidadosamente seleccionadas. ¿Buscas regalos para cumpleaños, celebraciones o simplemente para consentirte? Tenemos opciones para cada ocasión.
+                </p>
+                <ul class="redes_footer">
+                    <li><a href="#"> <i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>    
+            </div>
+            <div class="seccion_footer reglamentos_footer">
+                <h3> Reglamentos 
+                </h3>
+                    <ul>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                        <li><a href="#">Defensa del consumidor</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                    </ul>
+            </div>
+            <div class="seccion_footer menu_footer">
+                <h3> 
+                    Menu
+                </h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="ofertas.html">Ofertas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>  
+            <div class="seccion_footer contacto_footer">
+                <h3>Contacto</h3>
+                <ul class="info_footer">
+                    <li>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <P> 1204 Avenida Pueyrredon <br>
+                        Capital Federal CP 1205 </P>      
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-phone"></i></span>
+                        <p>Aten. al cliente: (+54) 011 1111-2222<br>
+                        Reclamos: (+54) 011 1111-3333 </p> 
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <p>sweetcandy@gmail.com</p>   
+                     </li>
+                </ul>
+            </div>      
+        </div> 
+        <div class="copyright">
+        <p >©2023 - Todos los Derechos Reservados / Sweet Candy</p>
+        </div>
+    </footer>
+</body>
+</html>
