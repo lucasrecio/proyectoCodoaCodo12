@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Golosinas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css"> 
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="./css/estilos-contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=IBM+Plex+Mono:wght@500&family=Lemonada:wght@300..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+            <div class="logo">
+                <!-- <img src="logo.png" alt="Sweet candy">--> 
+                <h1>Sweet Candy</h1>
+            </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <img src="./recursos/menu.png" class="img-menu" alt="Menú desplegable">
+            </label>
+            
+            <div class="search-bar">
+                <input type="text"class="input-text" placeholder="Buscá tu producto..." >
+                <button type="submit" class="search-button"></button>
+            </div>
+            
+        
+       
+        <div class="user-options">
+            <a href="#">Registrarse</a>
+            <a href="#">Iniciar Sesión</a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="text-center">
+
+        <h1>Sweet Candy es Alegría en forma de golosinas.</h1>        
+        
+    </div>
+    </section>
+
+    
+        <div class="container">
+            <h4 class = "logo-contacto"> Contacto </h4>
+            <div class = "contact-wrapper">
+                <div class = "contact-form"> 
+                   
+                    <form action="/my-handling-form-page" method="post">
+                        
+                        <p> 
+                            <label for="nombre_apellido">*Nombre y Apellido:</label>
+                            <input type="text" id="nombre_apellido" name="nombre_apellido" required="required"/>
+                        </p>
+                        <p>
+                            <label for="email">*Correo electrónico:</label>
+                            <input type="email" id="email" name="email" required="required" /> 
+                        </p>
+                        <p>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="telefono" id="mail" name="user_mail" />
+                        </p>
+                        <p>
+                            <label for="msg">*Mensaje:</label>
+                            <textarea id="msg" name="user_message" required="required"></textarea>
+                        </p>
+                        <p>
+                            <label for="msg">Contactarse con:</label>
+                            <select class="select-style" >
+                                <option value="1">Información general</option>
+                                <option value="2">Ventas</option>
+                                <option value="3">Recursos Humanos</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" value="1" checked="checked" style="height: 20px;  width: 30px"  >
+                                "Recibir novedades por email"
+                            </label>
+                        </p>
+                        <p>
+                            <button type="submit">Enviar</button>
+                            <p style="font-size:12px"> (*) Indica campos requeridos.</p>
+                        </p> 
+                    </form>
+                
+
+                    <div class="contact-wrap">
+                        <img class ="contact-imagen" src="./recursos/sweet-candy.jpeg" />
+                        <ul>
+                            <li><i class="fa fa-phone" style="font-size:19px">123-456-7890</i></li>
+                            <li><i class="fa fa-map-pin" style="font-size:17px"></i>Avenida Siempre Viva, Springfield</li>
+                            <li><p></p></li>
+                            <li><p style ="font-size:24px">Horario de Atención:</p></li>
+                            <li><i class="fa fa-calendar-check-o" style="font-size:17px"></i>Lunes a Viernes de 8:00 a 17:00 hs</li>
+                            <li><i class="fa fa-calendar-check-o" style="font-size:17px"></i>Sábados de 8:00 a 12:00 hs</li>
+                            <li><i class="fa fa-calendar-times-o" style="font-size:17px"></i>Domingos/Feriados : Cerrado</li>
+                        </ul>                        
+                    </div> 
+                </div>
+            </div> 
+        </div> 
+
+    <footer>
+        <div class="contact-info">
+            <ul class="widget-contact-info">
+                <li class = "titulo">
+                   "DATOS DE CONTACTO"
+                </li>
+                <p>Dirección: Avenida Siempre Viva, Springfield</p>
+                <p>Teléfono: 123-456-7890</p>
+                <p>Email: info@Swwetcandy.com</p>
+            </ul>  
+        </div>
+        <div class="social-media">
+            <h1 class="social-media-title">Seguinos</h1>
+            <div class="social-media-icons">
+                <a href="#"><img src="./recursos/square-instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="./recursos/facebook.svg" alt="Facebook"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+</body>
+</html>
