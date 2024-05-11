@@ -12,7 +12,7 @@
 }
 
 .container{
-    width: 70%;
+    width: 50%;
     margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
@@ -21,52 +21,41 @@
     
 }
 
-.logo-contacto{
+.logo-contacto h2{
     
-    font-size:  5em;
     text-align: center;
-    font-family: "Pacifico", cursive;
-    background: linear-gradient(to left, blue, indigo, violet,green);
-    background-clip: text;
-    display: block;
-    color: transparent;
+    margin-bottom: 30px;
+    color: #333;
 }
-
 
 .contact-wrapper{
-    box-shadow: 0 0 20px 0 rgba(243, 56, 165, 0.5);
+    box-shadow: 0 0 20px 0 #adb2fb;
 }
 
-.contact-wrapper>*{
+.contact-wrapper > *{
     padding: 1em;
 }
 
-
 .contact-form{
+    
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    padding-top: 80px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 80px;
+    grid-template-columns: 2fr 1fr;
 }
+
 
 .contact-form form{
     margin: 0;
     padding: 5em;
+    padding-top: 0;
+   
 }
 
-.contact-form form p{
+.contact-form form div{
      margin: 0;
      padding: 2em;
-     font-family: "IBM Plex Mono", monospace;
+     font-family: 'Poppins', sans-serif;
      font-style: normal;
      font-size: 1.2em;
-
-}
-
-.contact-form form block{
-    grid-column: 1/3;
 
 }
 
@@ -75,55 +64,65 @@
 .contact-form form textarea{
 
     width: 100%;
-    padding: .7em;
+    padding: 0.8em;
     border: none;
     background: none;
     outline: 0;
     color: black;
-    border-bottom: 1px solid rgba(242, 55, 164, 0.5);
+    border-bottom: 1px solid #adb2fb;
 
 
 }
 
-.contact-form form select-style{
+.contact-form form .select-style{
 
     width: 240px; 
     height: 34px; 
     overflow: hidden; 
-    background: url(new_arrow.png) no-repeat right #ddd; 
-    border: 1px solid #ccc;
+    background: url(new_arrow.png) no-repeat right #ffffff; 
+    border: 1px solid #adb2fb;
 
 }
 
-
-.contact-form form button{
-    background: rgba(242, 55, 164, 0.5);
+.contact-form form button[type="submit"]{
+    background: #adb2fb;
     border: 0;
     text-transform: uppercase;
     padding: 1em;
 }
 
-.contact-form form button:hover,
-.contact-form form button:focus{
-    background: rgba(242, 55, 164, 0.5);
+.contact-form form button[type="submit"]:hover,
+.contact-form form button[type="submit"]:focus{
+    background: #caffef;
     color:black;
     transition: background-color 1s ease-out;
     outline: 0;
 }
 
 .contact-wrap{
-
+    
+    height: 950px;
+    width: 400px;
+    margin-right: 70px;
     background: #caffef;
-    padding-bottom: 10px;
 
+   
 }
 
-.contact-wrap h6,
+.contact-wrap img {
+
+    width: 300px;
+    position: relative;
+    padding-right: 50px;
+    left: 20%;
+    
+}
+
 .contact-wrap ul,
 .contact-wrap p{
     text-align: center;
     margin: 0 0 2rem 0;
-    font-family: "IBM Plex Mono", monospace;
+    font-family: 'Poppins', sans-serif;
      font-style: normal;
      font-size: 1.2em;
 }
@@ -138,21 +137,7 @@
     padding: 0.5em;
 }
 
-.contact-wrap img {
 
-    width: 400px;
-    position: relative;
-    left: 10%;
-    top: 5%;
-}
 
-.ibm-plex-mono-medium {
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 500;
-  font-style: normal;
-}
-
-/*Screamm
-*/
 
 
