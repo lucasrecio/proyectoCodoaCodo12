@@ -21,11 +21,15 @@
     
 }
 
-.logo-contacto h2{
+#titulo-contacto {
     
     text-align: center;
     margin-bottom: 30px;
-    color: #333;
+    color: black;
+    justify-content: center;
+    padding-bottom: 20px;
+    font-size: 2em;
+
 }
 
 .contact-wrapper{
@@ -77,10 +81,10 @@
 .contact-form form .select-style{
 
     width: 240px; 
-    height: 34px; 
+    height: 36px; 
     overflow: hidden; 
     background: url(new_arrow.png) no-repeat right #ffffff; 
-    border: 1px solid #adb2fb;
+    border: 2px solid #adb2fb;
 
 }
 
@@ -120,6 +124,7 @@
 
 .contact-wrap ul,
 .contact-wrap p{
+
     text-align: center;
     margin: 0 0 2rem 0;
     font-family: 'Poppins', sans-serif;
@@ -136,6 +141,8 @@
 .contact-wrap ul li{
     padding: 0.5em;
 }
+
+
 
 
 
