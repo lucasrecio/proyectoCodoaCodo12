@@ -7,12 +7,28 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
+ 
   }
 
-  .logo h1{
+  .logo h1 {
     /*color:  rgb(147, 141, 141);  */
       font-family: "Pacifico", cursive;
       font-size: 100px;
+      font-weight: 600;
+      font-style: normal;
+    background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+      
+      
+    }
+
+    
+  .logofooter {
+    /*color:  rgb(147, 141, 141);  */
+      font-family: "Pacifico", cursive;
+      font-size:20px;
       font-weight: 600;
       font-style: normal;
     background: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
