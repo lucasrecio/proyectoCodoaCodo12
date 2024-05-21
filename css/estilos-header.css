@@ -115,7 +115,7 @@ nav  ul  li  a:hover{
 
 nav  ul{
     flex-direction: column;
-    background-color: #304E9D;
+    background-color: #FFF5ED;
     position: fixed;
     left: 0;
     top: 145px;
@@ -163,7 +163,7 @@ nav  ul > li:first-child a{
 }
 
 .login:hover {
-    color: #DE7D39;
+    color:#DE7D39;
     
 }
 
