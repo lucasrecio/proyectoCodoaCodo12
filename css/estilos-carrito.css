@@ -142,7 +142,7 @@ button {
 
 /* Estilos para la imagen */
 .product-list img {
-    max-width: 100px; /* Define el ancho máximo de la imagen */
+    max-width: 80px; /* Define el ancho máximo de la imagen */
     height: auto; /* Permite que la altura se ajuste automáticamente */
     display: block; /* Para evitar espacios no deseados alrededor de la imagen */
 }
@@ -188,14 +188,10 @@ button {
     .payment-method select {
         width: 100%;
     }
-    .product-list, .total {
+    .product-list, .total, .table-container {
         width: 100%; /* Cambia el ancho al 100% en pantallas más pequeñas */
     }
 
-    table,td,th{
-        max-width: 100px; /* Define el ancho máximo de la imagen */
-        height: auto; /* Permite que la altura se ajuste automáticamente */
-        display: block; /* Para evitar espacios no deseados alrededor de la imagen */
-      }
+  
  
 }
