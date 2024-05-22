@@ -184,4 +184,13 @@ button {
     .payment-method select {
         width: 100%;
     }
+    .product-list, .total, table,td,th {
+        width: 100%; /* Cambia el ancho al 100% en pantallas más pequeñas */
+    }
+    img{
+        max-width: 50px; /* Define el ancho máximo de la imagen */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        display: block; /* Para evitar espacios no deseados alrededor de la imagen */
+      }
+ 
 }
