@@ -76,6 +76,10 @@ body {
     margin-top: 20px;
 }
 
+.table-container {
+    overflow-x: auto; /* Agrega scroll horizontal si la tabla es demasiado ancha */
+}
+
 /* Estilos para la lista de productos */
 .product-list .texto-list {
     font-family: Arial, sans-serif; /* Fuente */
@@ -184,11 +188,12 @@ button {
     .payment-method select {
         width: 100%;
     }
-    .product-list, .total, table,td,th {
+    .product-list, .total {
         width: 100%; /* Cambia el ancho al 100% en pantallas más pequeñas */
     }
-    img{
-        max-width: 50px; /* Define el ancho máximo de la imagen */
+
+    table,td,th{
+        max-width: 100px; /* Define el ancho máximo de la imagen */
         height: auto; /* Permite que la altura se ajuste automáticamente */
         display: block; /* Para evitar espacios no deseados alrededor de la imagen */
       }
