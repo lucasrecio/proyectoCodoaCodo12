@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Golosinas</title>
     <script src="https://kit.fontawesome.com/a03e984235.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilos-general.css">
-    <link rel="stylesheet" href="css/estilos-header.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="css/estilos-carrito.css">
-    <link rel="stylesheet" href="css/estilos-footer.css">
+    <link rel="stylesheet" href="../css/estilos-general.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/estilos-carrito.css">
     <!--CUSTOM CSS-->
-    <link rel="stylesheet" href="./css/estilos-contacto.css">
+    <link rel="stylesheet" href="../css/estilos-contacto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +23,7 @@
             </div>
             <div class="search">
                     <input type="search" name="search" placeholder="Buscar...">
-                    <a href="registro.html" class="login"> <i class="fa-solid fa-user"></i> <span id="usernameDisplay">Login</span>
+                    <a href="./registro.html" class="login"> <i class="fa-solid fa-user"></i> <span id="usernameDisplay">Login</span>
                     </a>
             </div>
         </div>
@@ -37,12 +35,12 @@
                 </label>
                 <nav>
                      <ul>
-                         <li><a href="index.html" id="seleccion"><i class="fa-solid fa-house" style="color: #631f83;""></i></a></li>
-                         <li ><a href="ofertas.html">OFERTAS</a></li>
-                         <li ><a href="nosotros.html">NOSOTROS</a></li>
-                         <li><a href="productos.html">PRODUCTOS</a></li> 
-                         <li><a href="contacto.html">CONTACTO    </a> </li>
-                         <li> <a href="carrito.html" >MI CARRITO </a> </li>
+                         <li><a href="../index.html" id="seleccion"><i class="fa-solid fa-house" style="color: #631f83;"></i></a></li>
+                         <li ><a href="./ofertas.html">OFERTAS</a></li>
+                         <li ><a href="./nosotros.html">NOSOTROS</a></li>
+                         <li><a href="./productos.html">PRODUCTOS</a></li> 
+                         <li><a href="./contacto.html">CONTACTO    </a> </li>
+                         <li> <a href="./carrito.html" >MI CARRITO </a> </li>
                      </ul>
                 </nav>
             </div>
@@ -62,24 +60,25 @@
             <div class = "contact-wrapper">
                 <h4 id = "titulo-contacto"> Contacto </h4>
                 <div class = "contact-form"> 
-                    
                     <form action="/my-handling-form-page" method="post">
-                        
-                        <div> 
-                            <label for="nombre_apellido">*Nombre completo:</label>
-                            <input type="text" id="nombre_apellido" name="nombre_apellido" required="required"/>
+                        <div class="form-control"> 
+                            <label for="name">*Nombre completo:</label>
+                            <input type="text" id ="name" name="name"/>
+                            <small>Error message</small>
                         </div>
-                        <div>
+                        <div class="form-control">
                             <label for="email">*Correo electrónico:</label>
-                            <input type="email" id="email" name="email" required="required"/> 
+                            <input type="email" id= "email" name="email"/> 
+                            <small>Error message</small>
                         </div>
                         <div>
-                            <label for="telefono">Teléfono:</label>
-                            <input type="telefono" id="mail" name="user_mail" />
+                            <label for="phone">Teléfono:</label>
+                            <input type="tel" id="phone" name="phone"/>
                         </div>
-                        <div>
+                        <div class="form-control">
                             <label for="msg">*Mensaje:</label>
-                            <textarea id="msg" name="user_message" required="required"></textarea>
+                            <textarea id="msg" name="user_message"></textarea>
+                            <small>Error message</small>
                         </div>
                         <div>
                             <label for="msg">Contactarse con:</label>
@@ -100,10 +99,9 @@
                             <p style="font-size:12px"> (*) Indica campos requeridos.</p>
                         </div> 
                     </form>
-                
-
+                    <script src = "../js/form-validation.js"></script>
                     <div class="contact-wrap">
-                        <img class ="contact-imagen" src="./recursos/sweet-candy.jpeg" />
+                        <img src="../recursos/sweet-candy.jpeg" alt= "logo-sc"/>
                         <ul>
                             <li><i class="fa fa-location-dot" style="font-size:17px"></i>Avenida Siempre Viva, Springfield</li>
                             <li><i class="fa fa-phone" style="font-size:19px"></i>123-456-7890</li>
@@ -128,7 +126,7 @@
                         Explora nuestro catálogo virtual y descubre una irresistible selección de golosinas cuidadosamente seleccionadas. ¿Buscas regalos para cumpleaños, celebraciones o simplemente para consentirte? Tenemos opciones para cada ocasión.
                     </p>
                     <ul class="redes_footer">
-                        <li><a href="#"> <i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
@@ -149,11 +147,11 @@
                         Menu
                     </h3>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="ofertas.html">Ofertas</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./ofertas.html">Ofertas</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
                     </ul>
                 </div>  
                 <div class="seccion_footer contacto_footer">
@@ -172,15 +170,15 @@
                         <li>
                             <span><i class="fa-solid fa-envelope"></i></span>
                             <p>sweetcandy@gmail.com</p>   
-                         </li>
+                        </li>
                     </ul>
                 </div>      
             </div> 
             <div class="copyright">
-            <p >©2023 - Todos los Derechos Reservados / Sweet Candy</p>
+            <p>©2023 - Todos los Derechos Reservados / Sweet Candy</p>
             </div>
         </footer>
+        <script src="js/form-validation.js"></script>
 </body>
 </html>
-</body>
-</html>
+

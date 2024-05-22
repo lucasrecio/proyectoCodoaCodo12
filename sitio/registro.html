@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión - Sweet Candy</title>
-    <link rel="stylesheet" href="css/estilos-general.css">
-    <link rel="stylesheet" href="css/estilos-header.css">
-    <link rel="stylesheet" href="css/estilos-footer.css">
-    <link rel="stylesheet" href="css/estilos-login.css">
+    <title>Registrarse - Sweet Candy</title>
     
+    <script src="https://kit.fontawesome.com/a03e984235.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos-general.css">
+    <link rel="stylesheet" href="../css/styles.css">    
+    <link rel="stylesheet" href="../css/estilos-registro.css">
+
 </head>
 <body>
     <header class="header">    
@@ -18,7 +19,7 @@
             </div>
             <div class="search">
                     <input type="search" name="search" placeholder="Buscar...">
-                    <a href="registro.html" class="login"> <i class="fa-solid fa-user"></i> <span id="usernameDisplay">Login</span>
+                    <a href="./registro.html" class="login"> <i class="fa-solid fa-user"></i> <span id="usernameDisplay">Login</span>
                     </a>
             </div>
         </div>
@@ -30,34 +31,42 @@
                 </label>
                 <nav>
                      <ul>
-                         <li><a href="index.html" id="seleccion"><i class="fa-solid fa-house" style="color: #631f83;""></i></a></li>
-                         <li ><a href="ofertas.html">OFERTAS</a></li>
-                         <li ><a href="nosotros.html">NOSOTROS</a></li>
-                         <li><a href="productos.html">PRODUCTOS</a></li> 
-                         <li><a href="contacto.html">CONTACTO    </a> </li>
-                         <li> <a href="carrito.html" >MI CARRITO </a> </li>
+                         <li><a href="../index.html" id="seleccion"><i class="fa-solid fa-house" style="color: #631f83;"></i></a></li>
+                         <li ><a href="./ofertas.html">OFERTAS</a></li>
+                         <li ><a href="./nosotros.html">NOSOTROS</a></li>
+                         <li><a href="./productos.html">PRODUCTOS</a></li> 
+                         <li><a href="./contacto.html">CONTACTO    </a> </li>
+                         <li> <a href="./carrito.html" >MI CARRITO </a> </li>
                      </ul>
                 </nav>
             </div>
         </div> 
     </header>
-    
+  
 
-    <section class="login-section">
-        <div class="login-container">
-            <h2>Iniciar Sesión</h2>
-            <form action="procesar_login.php" method="POST">
+    <section class="register-section">
+        <div class="register-container">
+            <h2>Registrarse</h2>
+            <form action="procesar_registro.php" method="POST">
                 <div class="form-group">
                     <label for="username">Usuario:</label>
                     <input type="text" id="username" name="username" required>
                 </div>
                 <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
                     <label for="password">Contraseña:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <button type="submit">Iniciar Sesión</button>
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar Contraseña:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit">Registrarse</button>
             </form>
-            <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
+            <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
         </div>
     </section>
 
@@ -92,11 +101,12 @@
                     Menu
                 </h3>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="ofertas.html">Ofertas</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li ><a href="./ofertas.html">OFERTAS</a></li>
+                    <li ><a href="./nosotros.html">NOSOTROS</a></li>
+                    <li><a href="./productos.html">PRODUCTOS</a></li> 
+                    <li><a href="./contacto.html">CONTACTO    </a> </li>
+                    <li> <a href="./carrito.html" >MI CARRITO </a> </li>
                 </ul>
             </div>  
             <div class="seccion_footer contacto_footer">
@@ -123,5 +133,8 @@
         <p >©2023 - Todos los Derechos Reservados / Sweet Candy</p>
         </div>
     </footer>
+
+
+   <script src="scripts/validacion-registro.js"></script>    
 </body>
 </html>
