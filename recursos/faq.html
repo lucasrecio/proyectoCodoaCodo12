@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Golosinas</title>
+    <title>Registrarse - Sweet Candy</title>
+    
     <script src="https://kit.fontawesome.com/a03e984235.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/estilos-general.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/estilos-carrito.css">
-    <!--CUSTOM CSS-->
-    <link rel="stylesheet" href="../css/estilos-contacto.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=IBM+Plex+Mono:wght@500&family=Lemonada:wght@300..700&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">    
+    <link rel="stylesheet" href="../css/estilos-registro.css">
+
 </head>
 <body>
     <header class="header">    
@@ -46,87 +42,36 @@
             </div>
         </div> 
     </header>
-
-    <section class="banner">
-        <div class="text-center">
-
-        <h1>Sweet Candy es Alegría en forma de golosinas.</h1>        
-        
-    </div>
-    </section>
-
-    
-        <div class="container">
-            <div class = "contact-wrapper">
-                <h4 id = "titulo-contacto"> Contacto </h4>
-                <div class = "contact-form"> 
-                    <form action="/my-handling-form-page" method="post">
-                        <div class="form-control"> 
-                            <label for="name">*Nombre completo:</label>
-                            <input type="text" id ="name" name="name"/>
-                            <small>Error message</small>
-                        </div>
-                        <div class="form-control">
-                            <label for="email">*Correo electrónico:</label>
-                            <input type="email" id= "email" name="email"/> 
-                            <small>Error message</small>
-                        </div>
-                        <div>
-                            <label for="phone">Teléfono:</label>
-                            <input type="tel" id="phone" name="phone"/>
-                        </div>
-                        <div class="form-control">
-                            <label for="msg">*Mensaje:</label>
-                            <textarea id="msg" name="user_message"></textarea>
-                            <small>Error message</small>
-                        </div>
-                        <div>
-                            <label for="msg">Contactarse con:</label>
-                            <select class="select-style" >
-                                <option value="1">Información general</option>
-                                <option value="2">Ventas</option>
-                                <option value="3">Recursos Humanos</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="checkbox" value="1" checked="checked" style="height: 20px;  width: 30px"  >
-                                "Recibir novedades por email"
-                            </label>
-                        </div>
-                        <div >
-                            <button type="submit">Enviar</button>
-                            <p style="font-size:12px"> (*) Indica campos requeridos.</p>
-                        </div> 
-                    </form>
-                    <script src = "../js/form-validation.js"></script>
-                    <div class="contact-wrap">
-                        <img src="../recursos/sweet-candy.jpeg" alt= "logo-sc"/>
-                        <ul>
-                            <li><i class="fa fa-location-dot" style="font-size:17px"></i>Avenida Siempre Viva, Springfield</li>
-                            <li><i class="fa fa-phone" style="font-size:19px"></i>123-456-7890</li>
-                            <li><i class="fa fa-envelope" style="font-size:19px"></i>sweetcandy@gmail.com</li>
-                            
-                            <li><p style ="font-size:24px">Horario de Atención:</p></li>
-                            <li><i class="fa fa-calendar-check-o" style="font-size:17px"></i>Lunes a Viernes de 8:00 a 17:00 hs</li>
-                            <li><i class="fa fa-calendar-check-o" style="font-size:17px"></i>Sábados de 8:00 a 12:00 hs</li>
-                            <li><i class="fa fa-calendar-times-o" style="font-size:17px"></i>Domingos/Feriados : Cerrado</li>
-                        </ul>                        
-                    </div> 
+        <section class="faq-section">
+            <div class="faq-container">
+                <h2>Preguntas Frecuentes</h2>
+                <div class="faq">
+                <div class="faq-item">
+                    <h3 class="question" onclick="toggleAnswer(event)">Pregunta 1</h3>
+                    <p class="answer">Respuesta 1</p>
                 </div>
-            </div> 
-        </div> 
+                <div class="faq-item">
+                    <h3 class="question" onclick="toggleAnswer(event)">Pregunta 2</h3>
+                    <p class="answer">Respuesta 2</p>
+                </div>                
+                    
+                </div>
+            </div>
+        </section>
+        
+        
+        
         <footer class="footer"> 
             <div class="contenedor_footer" >
                 <div class="seccion_footer nosotros_footer"> 
                     <div class="logofooter">
-                        Sweet Candy
+                    <h3> Sweet Candy</h3>
                     </div>
                     <p>En SweetCandy, hacemos que satisfacer tus antojos de dulces sea más fácil que nunca. Desde clásicos caramelos hasta las últimas tendencias en confitería, nuestra tienda ofrece una amplia variedad de deliciosas opciones para todos los gustos y ocasiones.
                         Explora nuestro catálogo virtual y descubre una irresistible selección de golosinas cuidadosamente seleccionadas. ¿Buscas regalos para cumpleaños, celebraciones o simplemente para consentirte? Tenemos opciones para cada ocasión.
                     </p>
                     <ul class="redes_footer">
-                        <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href="#"> <i class="fa-brands fa-square-facebook"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
@@ -170,15 +115,27 @@
                         <li>
                             <span><i class="fa-solid fa-envelope"></i></span>
                             <p>sweetcandy@gmail.com</p>   
-                        </li>
+                         </li>
                     </ul>
                 </div>      
             </div> 
             <div class="copyright">
-            <p>©2023 - Todos los Derechos Reservados / Sweet Candy</p>
+            <p >©2023 - Todos los Derechos Reservados / Sweet Candy</p>
             </div>
         </footer>
-        <script src="js/form-validation.js"></script>
-</body>
-</html>
-
+        <script>
+            function toggleAnswer(event) {
+                let answer = event.currentTarget.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            }
+        </script>
+        
+        
+        
+        
+    </body>
+    </html>
+    
+       
+    
+    
