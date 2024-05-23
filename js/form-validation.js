@@ -1,3 +1,14 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('submit');
+  
+    console.log(btn); // HTMLButtonElement object
+  
+    // ✅ Works as expected
+    btn.addEventListener('click', () => {
+      alert('You clicked the button');
+    });
+  });
+
 const formulario = document.querySelector('contactForm');
 formulario.addEventListener('submit', function (event) {
     
