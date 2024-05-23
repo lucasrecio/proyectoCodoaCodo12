@@ -1,92 +1,60 @@
-const userNameField = document.getElementById('name');
-const emailField = document.getElementById('email');
-const msgField = document.getElementById('msg');
-const phoneField = document.getElementById('phone');
-
-form.addEventListener('submit',(e) => {
-    e.preventDefault();
-
-    checkInputs();
-
+const formulario = document.querySelector('contactForm');
+formulario.addEventListener('submit', function (event) {
+    
+        event.preventDefault();
+   
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value;
+        const msg= document.getElementById('msg').value.trim();
+   
+    let isValid = true;
+    if(name === ''){
+        setErrorFor(document.getElementById('name'), 'El nombre es requerido');
+        isValid = false;
+    }else{
+        setSuccessFor(document.getElementById('name'));
+    }
+    if(email === ''){
+        setErrorFor(document.getElementById('email'), 'El email es requerido');
+        isValid = false;
+    }else{
+        setSuccessFor(document.getElementById('email'));
+    }
+    if(phone === ''){
+        setSuccessFor(document.getElementById('phone'));
+    }else{
+        setSuccessFor(document.getElementById('phone'));
+    }
+    if(msg === ''){
+        setErrorFor(document.getElementById('msg'), 'El mensaje es requerido');
+        isValid = false;
+    }else{
+        setSuccessFor(document.getElementById('msg'));
+    }
+    
+    if (isValid) {            
+        form.submit();
+    }
 });
 
-const setErrorFor = (input,message) => {
+function setErrorFor(input, message) {
     const formControl = input.parentElement;
-    const small = formControl.querySelector('small'); 
-
-    small.innerText = '';
-    formControl.classList.add('error')
-    formControl.classList.remove('sucess');
-}
-
-const isEmail = email => {
-    const re = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    return re.test(String(email).toLowerCase());
-}
-
-function checkInputs(){
-
-    const userNameFieldValue = userNameField.value.trim();
-    const emailFieldValue = emailField.value.trim();
-    const msgFieldValue = msgField.value.trim();
-    const phoneFieldValue = phoneField.value.trim();
-
-    if(userNameFieldValue === ''){
-
-        setErrorFor(userNameField, '* Nombre completo es requerido');
-
-    }else{
-
-        setSuccessFor(userNameField);
-
-    }
-    if(emailFieldValue === ''){
-
-        setErrorFor(emailField, '* Email es requerido');
-
-    }else if (!isEmail(emailFieldValue)){
-   
-        setErrorFor(emailField, '* Email no es valido');
-
-    }else{
-
-        setErrorFor(emailField);
-    }
-
-    if(msgFieldValue === ''){
-
-        setErrorFor(msgField, '* Mensaje es requerido');
-
-    }else{
-
-        setSuccessFor(msgField);
-
-    }
-
-    if(phoneFieldValue === ''){
-
-        setSuccessFor(phoneField);
-
-    }else{
-      
-        setSuccessFor(phoneField);
-    }
-
-}
-
-function setErrorFor (input,message){
-    const formControl = input.parentElement;
-    const small = formControl.querySelector('small'); 
+    const small = formControl.querySelector('small');
 
     small.innerText = message;
-
-    formControl.className = 'form-control error';
+    formControl.classList.add('error');
+    formControl.classList.remove('success');
 }
 
-function setSuccessFor(input){
+function setSuccessFor(input) {
     const formControl = input.parentElement;
-    formControl.className = 'form-control success';
+    formControl.classList.remove('error');
+    formControl.classList.add('success');
 }
 
-
+function isEmail(email) {
+    const re = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return re.test(email);
+}
 
